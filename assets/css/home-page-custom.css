@@ -1,0 +1,263 @@
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.eb-garamond-400 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eb-garamond-800 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.roboto-400 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+/* header */
+#header {
+    background: #251101 !important;
+    height: 6em;
+    line-height: 5.5em !important;
+}
+
+#header h1 {
+    color: #fff;
+    font-size: 2.2em;
+}
+
+#header nav {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#header nav ul li.active>a,
+#header nav ul li.active>span {
+    color: #C7AC92;
+}
+
+/* accessibility */
+#header nav ul li a:focus-visible {
+    outline: auto;
+}
+
+
+a:hover {
+    color: #C7AC92 !important;
+}
+
+.dropotron {
+    background: #251101;
+}
+
+.dropotron.level-0:before {
+    background: #C7AC92;
+}
+
+.dropotron>li a {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@media screen and (max-width: 980px) {
+    #header {
+        height: 8em;
+    }
+
+    #header nav>ul {
+        margin-top: 3.2em;
+        font-size: 0.9em;
+    }
+}
+
+/* small title bar */
+#titleBar {
+    background-color: #251101;
+}
+
+#titleBar .title {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+#titleBar .toggle:before {
+    background-color: #4A7C59;
+    color: #251101;
+}
+
+/* small nav panel */
+#navPanel {
+    background: #4A7C59;
+}
+
+#navPanel .link {
+    color: #272833;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#navPanel .link.depth-0 {
+    color: #272833;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+/* banner */
+#banner {
+    background-attachment: fixed;
+    background-color: #272833;
+    /* https: //www.pexels.com/zh-cn/photo/2017868/ */
+    background-image: url("../../images/Billiard-table.webp");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    z-index: 21;
+}
+
+#banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");
+    ;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");
+    ;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");
+    ;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");
+    ;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#banner .content header h2 {
+    text-align: center;
+    font-size: 6em;
+    margin: 0;
+}
+
+#banner .content header h3 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#banner .content header p {
+    margin: 0.5em 0 0 0;
+    top: 0;
+    font-family: "DM Serif Text", serif;
+}
+
+/* # section */
+.spotlight .content {
+    /* background-color: rgba(37, 17, 1, 0.95); */
+    background-color: rgba(199, 172, 146, 0.95);
+}
+
+.spotlight .content header h2 {
+    color: #272833;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.spotlight .content p {
+    color: #272833;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.spotlight .content .button {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3);
+    color: #272833 !important;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.spotlight .content .button:hover,
+.spotlight .content .button:active {
+    /* box-shadow: inset 0 0 0 1px #4A7C59;
+    color: #4A7C59 !important; */
+    /* box-shadow: inset 0 0 0 1px #e44c65;
+    color: #e44c65 !important; */
+    background-color: #272833;
+    color: #C7AC92 !important;
+}
+
+.spotlight .goto-next.scrolly::before  {
+    filter: invert(1) brightness(0);
+}
+
+/* footer */
+#footer {
+    padding: 6em 0;
+}
+
+.footerlink {
+    text-align: left;
+    margin: 0 2em;
+    color: #fff;
+}
+
+.footerlink a {
+    color: #fff;
+}
+
+/* back button */
+#back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    background-color: #251101;
+    font-size: 1em;
+    
+}
+
+@media screen and (max-width: 480px) {
+    #back-to-top {
+        padding: 0 2em;
+    }
+}
